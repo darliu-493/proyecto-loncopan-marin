@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.panalsuitemobile.ui.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_bandeja"
+            app:destination="@id/bandejaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bandejaFragment"
+        android:name="com.example.panalsuitemobile.ui.BandejaFragment"
+        android:label="Bandeja">
+        <action
+            android:id="@+id/action_bandeja_to_detalle"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.panalsuitemobile.ui.DetalleFragment"
+        android:label="Detalle" />
+
+</navigation>
