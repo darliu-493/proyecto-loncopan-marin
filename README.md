@@ -1,3 +1,2 @@
 ﻿# Proyecto_Loncopan_Marin
 
-##Avances##
